@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        background-color: black;
+        color: white;
+        line-height: 30px;
+        
+    
+        
+        }
+    .container ul{
+        
+        display: flex;
+        padding: 30px;
+        
+    }
+    .container li{
+    list-style: none;
+    }
+    .container ul li a{
+        margin: 0 30px;
+        
+        text-transform: uppercase;
+        font-size: 15px;
+         }
+         .container input{
+            padding: 10px 25px;
+            border-radius: 10px;
+            
+         }
+         .button{
+            padding: 10px 20px;
+            color: white;
+            background-color: green;
+            border-radius: 8px;
+            margin-left: 5px;
+         }
+         .image{
+            display: flex;
+         }
+         .box{
+            height: 430px;
+            width: 530px;
+            margin: 70px 5px 40px 170px;
+            box-shadow: 2px 2px 13px 3px;
+            border-radius: 20px;
+            animation: fadeInUp 2s ease;
+            
+          }
+          
+         .box h1{
+            text-align: center;
+            padding-top: 40px;
+            font-size: 60px;
+            color: rgb(64, 6, 117);
+            font-style: italic;
+
+         }
+         
+         span{
+            color: yellow;
+         }
+         .box p{
+            font-size: 20px;
+            padding: 20px 10px 10px 30px;
+         }
+         .btn{
+            padding: 12px 25px;
+            margin: 30px 10px 20px 70px;
+            display: inline;
+            background-color:rgb(64, 6, 117);
+            color: white;
+            border-radius: 3px;
+            font-size: 18px;
+            border: 2px solid transparent;
+         }
+         .btn1{
+            padding: 12px 25px;
+            margin: 30px 30px 20px 30px;
+            display: inline;
+            background-color:rgb(11, 9, 100);
+            color: white;
+            border-radius: 3px;
+            border: 2px solid transparent;
+            font-size: 18px;
+
+         }
+         .btn1 a{
+            color: white;
+         }
+         img{
+            width: 300px;
+            height: 350px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin: 90px 20px 20px 140px;
+            border-radius: 200px;
+            box-shadow: 4px 4px 30px 5px rgb(113, 24, 172), -4px -4px 50px  5px rgb(199, 76, 76);
+            animation: fadeInRight 2s ease;
+            
+            
+         }
+        
+        
+         #about{
+            text-align: center;
+         }
+         .box2{
+            height: 430px;
+            width: 630px;
+            margin: 70px 5px 40px 20px;
+            box-shadow: 2px 2px 13px 3px;
+            border-radius: 20px;
+            animation: fadeInUp  ease;
+         
+            animation-delay: 20s;
+            
+          
+
+         }
+         .skill{
+            color: black;
+            display: flex;
+            flex-direction: column;
+            margin: 20px 20px;
+            font-weight: 500;
+            
+            
+            height: 20px;
+         }
+          .skill-box{
+            height: 7px;
+            width: 90%;
+            border-radius: 6px;
+            margin-top: 20px;
+            margin-left: 20px;
+            background-color:blue
+         
+            
+            
+         }
+        
+          .html{
+            
+            width: 80%;
+            color: blue;
+         
+         }
+          .css{
+            color: blue;
+            width: 80%;
+         
+         }
+         .javascript{
+            
+            width: 60%;
+         
+         }
+          .python{
+            
+            width: 50%;
+         
+         }
+         .reactjs{
+            animation-delay: 0.1s;
+            width: 70%;
+         
+            
+               
+            }
+          
+         
+
+         .box2 p{
+            text-align: center;
+            margin: 20px 30k8px 20px 30px;
+            font-size: 22px;
+
+            
+         }
+         .box2 button{
+            padding: 10px 15px;
+            border-radius: 10px;
+            color: white;
+            background-color: rgb(105, 17, 187);
+            margin-left: 40px;
+            font-size: 17px;
+         }
+         .flex{
+            display: flex;
+         }        
+          .project{
+            display: flex;
+         }
+         .pro1{
+            height: 360px;
+            width: 400px;
+            margin: 70px 10px 40px 30px;
+            box-shadow: 2px 2px 13px 3px;
+            border-radius: 20px;
+
+
+         }
+         .pro1 h2{
+            padding-top: 30px;
+            text-align: center;
+            font-size: 30px;
+         }
+         .pro1 p{
+            font-size: 20px;
+            padding-top: 20px;
+            text-align: center;
+         }
+         .cont p{
+            font-size: 20px;
+            text-align: center;
+            margin-top: 20px;
+         }
+         .contact{
+            display: flex;
+         }
+         .cont1{
+            height: 430px;
+            width: 550px;
+            margin: 70px 20px 20px 30px;
+            box-shadow: 2px 2px 13px 3px;
+            border-radius: 20px;
+         }
+         .cont1 p{
+            font-size: 24px;
+            text-align: center;
+            margin-top: 150px;
+            font-weight: bold;
+
+         }
+         .input{
+            gap: 20px;
+            
+            height: 40px;
+            width: 390px;
+            margin: 20px 10px 10px 30px;
+            border: 2px solid #aaa;
+            border-radius: 7px;
+            outline: none;
+            padding: 2px 7px;
+         }
+         #messagebox{
+            height: 160px;
+            width: 390px;
+            margin: 20px 10px 5px 30px;
+            border: 2px solid #aaa;
+            border-radius: 7px;
+            outline: none;
+            padding: 2px 7px;
+
+         }
+         .btn7{
+            text-align: right;
+            padding: 12px 22px;
+            border-radius: 10px;
+            background-color: rgb(70, 6, 129);
+            color: white;
+            margin-left: 70%;
+            font-size: 18px;
+            transform: scale(30deg);
+
+         }
+         .footer{
+            margin-top: 30px;
+            row-gap: 30px;
+            
+            padding: 10px 40px 30px 430px;
+            display: flex;
+         
+
+         }
+         .footer li{
+            list-style: none;
+            padding: 5px 20px;
+
+            
+         }
+         .footer li a{
+            font-size: 20px;
+         }
+         .copyright{
+            text-align: center;
+            color: gray;
+            font-size: 20px;
+            padding-bottom: 20px;
+         }
+         .picture{
+            width: 200px;
+            height: 200px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin: 20px 20px 20px 20px;
+            border-radius: 200px;
+            box-shadow: 4px 4px 30px 5px rgb(113, 24, 172), -4px -4px 50px  5px rgb(199, 76, 76);
+            animation: fadeInRight 2s ease;
+            display: inline;
+            
+            
+         }
+         .image2{
+            height: 160px;
+            width: 250px;
+            margin: 30px 50px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            border-radius: 5px;
+            box-shadow: 2px 2px 15px 7px gray
+         }
+       
+         @keyframes fadeInUp{
+            0%{
+               opacity: 0;
+               transform: translateY(50px);
+            
+            }
+            100%{
+               opacity: 1;
+               transform: translateY(0px);
+            }
+         }
+         @keyframes fadeInRight{
+            0%{
+               opacity: 0;
+               transform: translateY(-50px);
+            }
+            100%{
+               opacity: 1;
+               transform: translateY(0px);
+            }
+         }
+         @media(max-width:414px)
+         {
+            .container{
+               background-color: black;
+               color: white;
+               line-height: 40px;
+               width: 890px;
+               
+           
+               
+               }
+            .container ul{
+        
+               display: block;
+               padding: 10px;
+               
+           }
+           .image{
+            display: block;
+         }
+         .flex{
+            display: block;
+         }  
+         .project{
+            display: block;
+         }
+         .box{
+            height: 450px;
+            width: 460px;
+            margin: 50px 5px 40px 60px;
+            box-shadow: 2px 2px 13px 3px;
+            border-radius: 20px;
+            animation: fadeInUp 2s ease;
+            
+          }
+          .box2{
+            height: 430px;
+            width: 460px;
+            margin: 50px 5px 40px 60px;
+            box-shadow: 2px 2px 13px 3px;
+            border-radius: 20px;
+            animation: fadeInUp  ease;
+         
+            animation-delay: 20s;
+            
+          
+
+         }
+         .pro1{
+            height: 400px;
+            width: 460px;
+            margin: 50px 30px 30px 60px;
+            box-shadow: 2px 2px 13px 3px;
+            border-radius: 20px;
+
+
+         }
+         .contact{
+            display: block;
+         }
+         .cont1{
+            height: 430px;
+            width: 550px;
+            margin: 50px 30px 20px 60px;
+            box-shadow: 2px 2px 13px 3px;
+            border-radius: 20px;
+         }
+         .footer{
+            margin-top: 30px;
+            row-gap: 30px;
+            display: block;
+            
+            
+            padding: 10px 40px 30px 430px;
+            }
+            .footer a{
+               text-align: left;
+            }
+            .copyright{
+               text-align: center;
+               color: gray;
+               font-size: 20px;
+               padding-bottom: 20px;
+            }
+         }
+         
+       
+
+</style>
+<body>
+    <div class="container">
+        <nav>
+            
+            <ul>
+                <h1>Portfolio</h1>
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#">About</a></li>
+                <li> <a href="#">Projects</a></li>
+                <li> <a href="#">Contact Us</a></li>
+                <input type="text" placeholder="Search here">
+                <button class="button">Search</button>
+                
+            </ul>
+        </nav>
+    </div>
+    <div class="image">
+    <div class="box">
+        
+        <h1> Hello I am <br> <span class="auto">Coder</span></h1>
+        <p>My Name is Kainat Idrees. I'm a  Front End Web Developer with over 1 year of experience.</p>
+        <button class="btn">Hire Me</button>
+        <button class="btn1 downloadbtn"> <a href="CURRICULUM VITAE.docx">Download</a></button>
+
+    </div>
+    <img src="kainatpic.jpg" alt="">
+    </div>
+    <div>
+        
+        <h1 id="about">About Me</h1>
+    </div>
+    <div class="flex">
+    <div class="box2">
+      <img src="kainatpic.jpg" class="picture" alt="">
+      
+      <p>My name is kainat Idrees.I am a beginner in Front End  <br> <br>Web Development. I have 1+ year experience.</p>
+      <button>Hire me</button>
+    </div>
+    <div class="box2">
+      <div>
+      <span class="skill">HTML</span>
+      <div class="skill-box html"></div>
+      </div>
+      <div>
+      <span  class="skill">CSS</span>
+      <div class="skill-box skill-per css"></div>
+      </div>
+      <div>
+      <span  class="skill">Python</span>
+      <div class="skill-box skill-per python"></div>
+      </div>
+      <div>
+      <span  class="skill">Javascript</span>
+      <div class="skill-box skill-per javascript"></div>
+      </div>
+      <div>
+      <span  class="skill">React JS</span>
+      <div class="skill-box skill-per reactjs"></div>
+      </div>
+      
+    </div>
+    </div>
+    <h1 id="about">Projects</h1>
+    <div class="project">
+        <div class="pro1">
+         <img src="laptop2.jpg" alt="" class="image2">
+      
+            <h2>Completed</h2>
+            <p>20+ Projects</p>
+
+        </div>
+        <div class="pro1">
+         <img src="laptop3.jpg" alt="" class="image2">
+            <h2>Clients</h2>
+            <p>80+ Happy Clients</p>
+            
+        </div>
+        <div class="pro1">
+         <img src="laptop4.jpg" alt="" class="image2">
+            <h2>Experience</h2>
+            <p>1+ Year in Front end Web Development</p>
+            
+        </div>
+    </div>
+    
+        <div class="cont">
+
+    <h1 id="about">Let's Work Together</h1>
+    <p>Do you have a project in your mind contact me here</p>
+    
+    </div>
+    <div class="contact">
+        <div class="cont1">
+            <p> Email: im493177@gmail.com <br> <br>Phone No. 03208421233</p>
+         </div>
+        <div class="cont1"> 
+            <input type="text" placeholder="Name" class="input"><br>
+            <input type="text" placeholder="Email" class="input"><br>
+            <input type="text"  placeholder="Contact No" class="input"><br>
+            <textarea name="Messagebox" id="messagebox" cols="30" rows="10" placeholder="Message"></textarea>
+
+        </div>
+    </div>
+    <button class="btn7">Send</button>
+    <div class="footer">
+                 <li> <a href="#">Home</a></li>
+                <li> <a href="#">About</a></li>
+                <li> <a href="#">Projects</a></li>
+                <li> <a href="#">Contact Us</a></li>
+
+    </div>
+    <p class="copyright">Copyright c codeCreators-All right reserved 2024</p>
+    
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+            var typed=new Typed(".auto",{
+                strings:["Coder","Gamer","Professioner","Programmer"],
+                typeSpeed:160,
+                backSpeed:160,
+                loop:true
+            })
+            var down=document.querySelector("downloadbtn")
+        </script>
+    
+    
+    
+    
+</body>
+</html>
